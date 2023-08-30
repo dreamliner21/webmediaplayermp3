@@ -1,0 +1,62 @@
+body {
+  background: url("backgroundmp3.png");
+  height: 200vh;
+  background-position: center;
+  background-size: cover;
+  display: flex; /* Menambahkan aturan flex untuk mengatur posisi secara vertikal dan horizontal */
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  position: relative;
+  height: 100vh;
+}
+
+h1 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.volume-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#volumeBar {
+  width: 100%;
+  max-width: 200px;
+  margin-right: 10px;
+}
+
+#volumePercentage {
+  font-weight: bold;
+}
+
+#playlist {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#playlist li {
+  cursor: pointer;
+  padding: 10px;
+  background-color: transparent;
+  opacity: 0.7;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#playlist li:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
